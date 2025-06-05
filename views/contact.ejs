@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheets/contact.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Modern Contact Forms</h1>
+            <p class="text-muted">Beautifully designed contact forms for your projects</p>
+        </div>
+        
+        <!-- Simple Contact Form -->
+        <div class="form-container">
+            <div class="card-pattern"></div>
+            <div class="form-title">
+                <h3><i class="fas fa-comment-alt"></i> Simple Contact Form</h3>
+            </div>
+            <h2 class="form-section-title">Get in Touch</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="name1" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name1" placeholder="Your name">
+                </div>
+                <div class="mb-4">
+                    <label for="email1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email1" placeholder="name@example.com">
+                </div>
+                <div class="mb-4">
+                    <label for="message1" class="form-label">Message</label>
+                    <textarea class="form-control" id="message1" rows="4" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane ms-1"></i></button>
+            </form>
+        </div>
+        
+        <!-- Business Contact Form -->
+        <div class="form-container">
+            <div class="card-pattern"></div>
+            <div class="form-title">
+                <h3><i class="fas fa-briefcase"></i> Business Contact Form</h3>
+            </div>
+            <h2 class="form-section-title">Business Inquiry</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" class="form-control" id="company">
+                </div>
+                <div class="mb-4">
+                    <label for="email2" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0"><i class="fas fa-envelope text-muted"></i></span>
+                        <input type="email" class="form-control border-start-0" id="email2" placeholder="name@company.com" required>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="phone" class="form-label">Phone</label>
+                    <div class="input-group">
+                        <span class="input-group-text bg-light border-end-0"><i class="fas fa-phone text-muted"></i></span>
+                        <input type="tel" class="form-control border-start-0" id="phone" placeholder="+1 (555) 000-0000">
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="subject" class="form-label">Subject</label>
+                    <select class="form-select" id="subject" required>
+                        <option value="" selected disabled>Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="sales">Sales</option>
+                        <option value="partnership">Partnership</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="message2" class="form-label">Message</label>
+                    <textarea class="form-control" id="message2" rows="5" required></textarea>
+                </div>
+                <div class="mb-4 form-check">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-arrow-right ms-1"></i></button>
+            </form>
+        </div>
+        
+        <!-- Support Ticket Form -->
+        <div class="form-container">
+            <div class="card-pattern"></div>
+            <div class="form-title">
+                <h3><i class="fas fa-headset"></i> Support Ticket Form</h3>
+            </div>
+            <h2 class="form-section-title">Submit a Support Ticket</h2>
+            <form>
+                <div class="mb-4">
+                    <label for="email3" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email3" required>
+                    <div class="form-text mt-2">We'll use this to contact you regarding your ticket.</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <label for="product" class="form-label">Product</label>
+                        <select class="form-select" id="product" required>
+                            <option value="" selected disabled>Select a product</option>
+                            <option value="product1">Product One</option>
+                            <option value="product2">Product Two</option>
+                            <option value="product3">Product Three</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <label for="priority" class="form-label">Priority</label>
+                        <select class="form-select" id="priority" required>
+                            <option value="low">Low</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="high">High</option>
+                            <option value="urgent">Urgent</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="ticketSubject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="ticketSubject" required>
+                </div>
+                <div class="mb-4">
+                    <label for="issueDetails" class="form-label">Issue Details</label>
+                    <textarea class="form-control" id="issueDetails" rows="6" required placeholder="Please describe your issue in detail..."></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="formFile" class="form-label">Attachments</label>
+                    <input class="form-control" type="file" id="formFile" multiple>
+                    <div class="form-text mt-2">Upload screenshots, logs, or other helpful files (max 5MB each).</div>
+                </div>
+                <button type="submit" class="btn btn-success">Submit Ticket <i class="fas fa-ticket-alt ms-1"></i></button>
+            </form>
+        </div>
+        
+        <!-- Newsletter Signup Form -->
+        <div class="form-container">
+            <div class="card-pattern"></div>
+            <div class="form-title">
+                <h3><i class="fas fa-envelope-open-text"></i> Newsletter Signup Form</h3>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <h2 class="form-section-title">Stay Updated</h2>
+                    <p class="text-muted mb-4">Subscribe to our newsletter for the latest news, updates, and exclusive offers.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="p-3 rounded-circle me-3" style="background-color: rgba(79, 70, 229, 0.1)">
+                            <i class="fas fa-bell text-primary"></i>
+                        </div>
+                        <p class="mb-0">Get notified about new features</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="p-3 rounded-circle me-3" style="background-color: rgba(79, 70, 229, 0.1)">
+                            <i class="fas fa-tag text-primary"></i>
+                        </div>
+                        <p class="mb-0">Exclusive subscriber-only deals</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="p-4 rounded-lg" style="background-color: #F9FAFB;">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName4" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName4">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName4" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName4">
+                            </div>
+                            <div class="col-12">
+                                <label for="email4" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email4" required>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="updates" checked>
+                                    <label class="form-check-label" for="updates">
+                                        I agree to receive marketing emails
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-primary w-100">Subscribe <i class="fas fa-paper-plane ms-1"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Label Form -->
+        <div class="form-container">
+            <div class="card-pattern"></div>
+            <div class="form-title">
+                <h3><i class="fas fa-comments"></i> Floating Label Contact Form</h3>
+            </div>
+            <h2 class="form-section-title">Get In Touch</h2>
+            <form>
+                <div class="form-floating mb-4">
+                    <input type="text" class="form-control" id="floatingName" placeholder="John Doe">
+                    <label for="floatingName">Full Name</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                    <label for="floatingEmail">Email address</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <input type="tel" class="form-control" id="floatingPhone" placeholder="+1234567890">
+                    <label for="floatingPhone">Phone Number</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <select class="form-select" id="floatingSelect" aria-label="Contact reason">
+                        <option selected disabled value="">Please select</option>
+                        <option value="1">General Inquiry</option>
+                        <option value="2">Product Support</option>
+                        <option value="3">Feedback</option>
+                        <option value="4">Other</option>
+                    </select>
+                    <label for="floatingSelect">Reason for Contact</label>
+                </div>
+                <div class="form-floating mb-4">
+                    <textarea class="form-control" placeholder="Leave your message here" id="floatingTextarea" style="height: 150px"></textarea>
+                    <label for="floatingTextarea">Your Message</label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Send Message <i class="fas fa-paper-plane ms-1"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+   
+
+</body>
+</html>
